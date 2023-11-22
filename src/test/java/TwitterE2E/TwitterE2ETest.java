@@ -12,7 +12,7 @@ public class TwitterE2ETest extends BaseTest {
 
     @Test
     public void testE2EScenario(){
-        login("Abuelfadl_M909", "Abu716@203");
+        login("Username", "Password");
         TweetsPage timeLine = new TweetsPage(driver);
         //test successfull login
         Assert.assertTrue(timeLine.isHomeLinkVisible(),"Login was not successful. Home link is not visible.");
