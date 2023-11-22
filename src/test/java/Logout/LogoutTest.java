@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class LogoutTest extends BaseTest {
     @Test
     public void testLogout(){
-        login("Abuelfadl_M909", "Abu716@203");
+        login("Username", "Password");
         TweetsPage timeLine = new TweetsPage(driver);
         LogoutPage logout = timeLine.clickLogOutButton();
         logout.confirmLogout();
